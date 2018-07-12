@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/studentNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@sample/students.json/data/name" />
+
+    <TextView
+        android:id="@+id/rollTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/roll"
+        app:layout_constraintStart_toStartOf="@id/studentNameTextView"
+        app:layout_constraintTop_toBottomOf="@id/studentNameTextView" />
+    
+    <TextView
+        android:id="@+id/ageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/age"
+        app:layout_constraintStart_toStartOf="@id/rollTitle"
+        app:layout_constraintTop_toBottomOf="@id/rollTitle" />
+
+    <TextView
+        android:id="@+id/collegeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/college"
+        app:layout_constraintTop_toBottomOf="@id/ageTitle" />
+
+    <TextView
+        android:id="@+id/rollTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/phoneIcon"
+        app:layout_constraintStart_toEndOf="@id/rollTitle"
+        app:layout_constraintTop_toTopOf="@id/rollTitle"
+        tools:text="@sample/students.json/data/roll" />
+
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/ageTitle"
+        app:layout_constraintTop_toTopOf="@id/ageTitle"
+        tools:text="@sample/students.json/data/age" />
+
+    <TextView
+        android:id="@+id/collegeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/collegeTitle"
+        app:layout_constraintTop_toTopOf="@id/collegeTitle"
+        tools:text="@sample/students.json/data/school" />
+
+</android.support.constraint.ConstraintLayout>

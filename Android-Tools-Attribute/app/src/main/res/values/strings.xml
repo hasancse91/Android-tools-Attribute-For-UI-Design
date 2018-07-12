@@ -4,4 +4,7 @@
     <string name="email">Email</string>
     <string name="phone">Phone</string>
     <string name="short_bio">Short Bio:</string>
+    <string name="roll">Roll:</string>
+    <string name="age">Age:</string>
+    <string name="college">College:</string>
 </resources>

@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "name": "John Doe",
+      "roll": 101,
+      "school": "Saint Joseph Higher Secondary School",
+      "age": 10
+    },
+    {
+      "name": "Maria Teri",
+      "roll": 102,
+      "school": "Dhaka International School",
+      "age": 8
+    },
+    {
+      "name": "Ted Bil",
+      "roll": 114,
+      "school": "Model Academy School and College",
+      "age": 15
+    },
+    {
+      "name": "Johny Dev",
+      "roll": 123,
+      "school": "Cambrian International College",
+      "age": 9
+    }
+  ]
+}
