@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Android-Tools-Attribute</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="short_bio">Short Bio:</string>
 </resources>

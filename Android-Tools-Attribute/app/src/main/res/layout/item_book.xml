@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/bookImage"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/the_alchemist"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/bookNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@id/bookImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@sample/book_names" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/bookNameTextView"
+        app:layout_constraintTop_toBottomOf="@id/bookNameTextView"
+        tools:text="@sample/book_prices" />
+
+    <TextView
+        android:id="@+id/ratingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@id/priceTextView"
+        app:layout_constraintTop_toBottomOf="@id/priceTextView"
+        tools:text="Rating: 5/5" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ratingTextView"
+        app:layout_constraintTop_toBottomOf="@id/ratingTextView"
+        tools:text="Description: The Alchemist is a novel by Brazilian author Paulo Coelho which was first published in 1988. Originally written in Portuguese, it became an international bestseller translated into some 70 languages as of 2016." />
+
+</android.support.constraint.ConstraintLayout>

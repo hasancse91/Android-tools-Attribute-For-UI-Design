@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/foodImage"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/pizza" />
+
+    <TextView
+        android:id="@+id/foodNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@id/foodImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Pizza Italiano" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/foodNameTextView"
+        app:layout_constraintTop_toBottomOf="@id/foodNameTextView"
+        tools:text="Price: 350 BDT" />
+
+    <TextView
+        android:id="@+id/ratingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@id/priceTextView"
+        app:layout_constraintTop_toBottomOf="@id/priceTextView"
+        tools:text="Rating: 4/5" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ratingTextView"
+        app:layout_constraintTop_toBottomOf="@id/ratingTextView"
+        tools:text="Description: Pizza is a traditional Italian dish consisting of a yeasted flatbread typically topped with tomato sauce and cheese and baked in an oven. It can also be topped with additional vegetables, meats, and condiments, and can be made without cheese." />
+
+</android.support.constraint.ConstraintLayout>
