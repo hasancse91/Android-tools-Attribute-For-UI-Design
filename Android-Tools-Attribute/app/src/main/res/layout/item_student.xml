@@ -6,6 +6,10 @@
     android:layout_height="wrap_content"
     android:padding="8dp">
 
+    <!--Check last lines of every widget
+        who contains `tools` attribute.
+        Remove and add them to understand the changes-->
+
     <TextView
         android:id="@+id/studentNameTextView"
         android:layout_width="wrap_content"
@@ -24,7 +28,7 @@
         android:text="@string/roll"
         app:layout_constraintStart_toStartOf="@id/studentNameTextView"
         app:layout_constraintTop_toBottomOf="@id/studentNameTextView" />
-    
+
     <TextView
         android:id="@+id/ageTitle"
         android:layout_width="wrap_content"

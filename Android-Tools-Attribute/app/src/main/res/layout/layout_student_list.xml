@@ -6,6 +6,10 @@
     android:layout_height="match_parent"
     android:padding="8dp">
 
+    <!--Check last lines of every widget
+        who contains `tools` attribute.
+        Remove and add them to understand the changes-->
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/profileRecyclerView"
         android:layout_width="0dp"
@@ -14,6 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="4"
         tools:listitem="@layout/item_student">
 
     </android.support.v7.widget.RecyclerView>

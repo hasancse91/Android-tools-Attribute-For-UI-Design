@@ -7,6 +7,10 @@
     android:padding="8dp"
     tools:context=".MainActivity">
 
+    <!--Check last lines of every widget
+        who contains `tools` attribute.
+        Remove and add them to understand the changes-->
+
     <TextView
         android:id="@+id/nameTitle"
         android:layout_width="wrap_content"

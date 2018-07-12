@@ -3,23 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="8dp">
+    android:layout_height="match_parent">
 
-    <!--Check last lines of every widget
-        who contains `tools` attribute.
-        Remove and add them to understand the changes-->
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/profileRecyclerView"
+    <fragment
+        android:id="@+id/fragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/item_profile">
+        tools:layout="@layout/layout_profile_list" />
 
-    </android.support.v7.widget.RecyclerView>
+    <!--You can remove the last line of above code
+        to check the difference.
+        Let, you want to show profile list
+        in this fragment-->
 
 </android.support.constraint.ConstraintLayout>
